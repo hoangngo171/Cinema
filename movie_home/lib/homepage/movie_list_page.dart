@@ -34,7 +34,7 @@ class _MovieListPageState extends State<MovieListPage> {
   }
 
   Future<void> _openGitHub() async {
-    final Uri url = Uri.parse('https://github.com/hoangngo171');
+    final Uri url = Uri.parse('https://github.com/hoangngo171/Cinema');
     if (await canLaunchUrl(url)) {
       // Mở link bằng trình duyệt mặc định của điện thoại
       await launchUrl(url, mode: LaunchMode.externalApplication); 

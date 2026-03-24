@@ -36,11 +36,12 @@ class _LoginPageState extends State<LoginPage> {
     if (userData != null) {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool('loggedIn', true);
+      await prefs.setString('accessToken', userData['accessToken'] ?? 'Lỗi: Không lấy được token từ API');
       await prefs.setString('currentUser', userData['username']);
       await prefs.setString('userImage', userData['image'] ?? '');
       await prefs.setString('userName', '${userData['firstName']} ${userData['lastName']}');
       await prefs.setString('userEmail', userData['email'] ?? '');
-
+      
       if (!mounted) return;
       Navigator.pushReplacement(
         context,

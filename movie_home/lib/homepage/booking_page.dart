@@ -91,6 +91,7 @@ class _BookingPageState extends State<BookingPage> {
         backgroundColor: Colors.green,
       ),
     );
+    Navigator.popUntil(context, (route) => route.isFirst);
   }
 
   @override

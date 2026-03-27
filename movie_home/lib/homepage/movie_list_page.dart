@@ -115,7 +115,7 @@ class _MovieListPageState extends State<MovieListPage> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         actions: [
-          // THÊM LẠI: Nút Vé của tôi trên AppBar
+          // THÊM :Nút Vé của tôi trên AppBar
           IconButton(
             icon: const Icon(
               Icons.confirmation_number_outlined,

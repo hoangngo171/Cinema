@@ -26,7 +26,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
 
   // ✅ mở YouTube ngoài
   Future<void> openYoutube(String key) async {
-    final Uri url = Uri.parse("https://www.youtube.com/watch?v=$key");
+    final Uri url = Uri.parse("https://www.youtube.com/watch?v=$key",);
 
     if (!await launchUrl(
       url,

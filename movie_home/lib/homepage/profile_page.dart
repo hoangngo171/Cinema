@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
             Text(_userName, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.indigo)),
             const SizedBox(height: 8),
             Text(_userEmail, style: const TextStyle(fontSize: 16, color: Colors.grey)),
-            const SizedBox(height: 40), // Tạo khoảng cách cho đẹp
+            const SizedBox(height: 40), // Tạo khoảng cách
               const Divider(), // Kẻ 1 đường gạch ngang
               const SizedBox(height: 20),
               

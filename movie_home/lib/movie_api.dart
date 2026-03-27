@@ -32,7 +32,7 @@ class MovieApi {
       if (response.statusCode == 200) {
         final List list = response.data['results'];
         for (var item in list) {
-          if (item['site'] == 'YouTube' && item['type'] == 'Trailer') {
+          if (item['site'] == 'YouTube' && item['type'] == 'Trailer' && item['official'] == true) {
             return item['key'];
           }
         }

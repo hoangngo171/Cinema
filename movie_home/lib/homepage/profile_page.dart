@@ -155,8 +155,27 @@ class _ProfilePageState extends State<ProfilePage> {
                       "Địa chỉ",
                       "${_userData?['address']?['address'] ?? ''}, ${_userData?['address']?['city'] ?? ''}",
                     ),
-
                     const SizedBox(height: 20),
+                    
+                    const SizedBox(height: 12),
+
+                    _field("Quốc gia", _userData?['address']?['country']),
+
+                    const SizedBox(height: 12),
+
+                    _field("Trường đại học", _userData?['university']),
+
+                    const SizedBox(height: 12),
+
+                    _field("Phòng ban", _userData?['company']?['department']),
+
+                    const SizedBox(height: 12),
+
+                    _field("Công ty", _userData?['company']?['name']),
+
+                    const SizedBox(height: 12),
+
+                    _field("Chức vụ", _userData?['company']?['title']),
                   ],
                 ),
               ),

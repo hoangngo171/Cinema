@@ -156,7 +156,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       "${_userData?['address']?['address'] ?? ''}, ${_userData?['address']?['city'] ?? ''}",
                     ),
                     const SizedBox(height: 20),
-                    
+
                     const SizedBox(height: 12),
 
                     _field("Quốc gia", _userData?['address']?['country']),
@@ -203,7 +203,7 @@ Column(
       decoration: BoxDecoration(
         color: Colors.grey[200],
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: Colors.grey.shade300), // 🔥 thêm viền
+        border: Border.all(color: Colors.grey.shade300), //thêm viền
       ),
       child: SelectableText(
         token,

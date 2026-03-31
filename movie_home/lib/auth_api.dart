@@ -12,7 +12,7 @@ class AuthApi {
     ),
   );
 
-  // 🔥 LOGIN (lấy token + basic info)
+  // LOGIN
   static Future<Map<String, dynamic>?> login(
       String username, String password) async {
     try {
@@ -39,7 +39,7 @@ class AuthApi {
     }
   }
 
-  // 🔥 NEW: LẤY FULL PROFILE (QUAN TRỌNG NHẤT)
+  // LẤY FULL PROFILE
   static Future<Map<String, dynamic>?> getUser(
       int userId, String token) async {
     try {
@@ -67,7 +67,7 @@ class AuthApi {
     }
   }
 
-  // 🔥 REGISTER
+  //REGISTER
   static Future<bool> register(String username, String password) async {
     try {
       final response = await _dio.post(
